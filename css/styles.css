@@ -1546,6 +1546,29 @@ strong { font-weight: 600; }
   margin: 0;
 }
 
+.footer-fedini {
+  margin-top: 0.4rem !important;
+  color: rgba(242,234,211,.2) !important;
+  transition: color var(--t-normal);
+}
+
+.footer-fedini:hover {
+  color: rgba(242,234,211,.45) !important;
+}
+
+.footer-fedini a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196,98,45,.3);
+  transition: color var(--t-rapido), border-color var(--t-rapido);
+}
+
+.footer-fedini a:hover {
+  color: var(--naranja-quemado) !important;
+  border-color: var(--naranja-quemado);
+}
+
 @media (max-width: 768px) {
   .footer-grilla {
     grid-template-columns: 1fr;
