@@ -8,12 +8,12 @@
    1. VARIABLES DE DISEÑO
    ---------------------------------------------------------------- */
 :root {
-  /* Paleta de color */
-  --verde-bosque:      #2D4A22;
-  --verde-bosque-mid:  #3D6230;
-  --verde-bosque-claro:#4E7B3D;
+  /* Paleta de color — azul marino + acentos cálidos */
+  --verde-bosque:      #1C3E7A;
+  --verde-bosque-mid:  #2A5CA8;
+  --verde-bosque-claro:#3A74C8;
   --marron-cuero:      #7A4A35;
-  --marron-oscuro:     #4A2C1E;
+  --marron-oscuro:     #2C3E6A;
   --crema-hueso:       #F2EAD3;
   --crema-oscura:      #E5D9B6;
   --naranja-quemado:   #C4622D;
@@ -352,13 +352,16 @@ strong { font-weight: 600; }
   right: 0;
   z-index: 100;
   padding: 1.25rem 0;
+  /* Gradiente permanente: garantiza visibilidad del logo y hamburguesa
+     sobre cualquier sección, sea oscura o clara */
+  background: linear-gradient(to bottom, rgba(0,0,0,.45) 0%, transparent 100%);
   transition: background-color var(--t-normal),
               padding          var(--t-normal),
               backdrop-filter  var(--t-normal);
 }
 
 .site-header.scrolled {
-  background-color: rgba(30, 48, 22, 0.96);
+  background-color: rgba(18, 45, 100, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 0.75rem 0;
@@ -375,12 +378,29 @@ strong { font-weight: 600; }
   gap: var(--sp-md);
 }
 
-/* Logo */
+/* Logo con imagen circular */
 .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(242,234,211,.25);
+}
+
+.logo-textos {
   display: flex;
   flex-direction: column;
   line-height: 1;
-  flex-shrink: 0;
 }
 
 .logo-nombre {
@@ -397,6 +417,23 @@ strong { font-weight: 600; }
   text-transform: uppercase;
   color: rgba(242,234,211,.55);
   margin-top: 3px;
+}
+
+/* Footer logo */
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(242,234,211,.15);
 }
 
 /* Navegación desktop */
@@ -550,10 +587,10 @@ strong { font-weight: 600; }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10, 20, 7, 0.97) 0%,
-    rgba(10, 20, 7, 0.88) 35%,
-    rgba(10, 20, 7, 0.72) 60%,
-    rgba(10, 20, 7, 0.58) 100%
+    rgba(5, 12, 28, 0.97) 0%,
+    rgba(5, 12, 28, 0.88) 35%,
+    rgba(5, 12, 28, 0.72) 60%,
+    rgba(5, 12, 28, 0.58) 100%
   );
 }
 
@@ -833,7 +870,7 @@ strong { font-weight: 600; }
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(ellipse at 15% 50%, rgba(78,123,61,.25) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 50%, rgba(58,116,200,.22) 0%, transparent 55%),
     radial-gradient(ellipse at 85% 20%, rgba(122,74,53,.18) 0%, transparent 45%);
   pointer-events: none;
 }
@@ -855,14 +892,14 @@ strong { font-weight: 600; }
 }
 
 .servicio {
-  background-color: rgba(45,74,34,.82);
+  background-color: rgba(28,62,122,.82);
   padding: var(--sp-lg) var(--sp-md);
   position: relative;
   transition: background-color var(--t-normal);
 }
 
 .servicio:hover {
-  background-color: rgba(61,98,48,.9);
+  background-color: rgba(42,92,168,.9);
 }
 
 .servicio--oscuro {
@@ -1018,7 +1055,7 @@ strong { font-weight: 600; }
 }
 
 .caso-etiqueta--ok {
-  background: rgba(45,74,34,.7);
+  background: rgba(28,62,122,.7);
 }
 
 /* Información del caso */
@@ -1049,7 +1086,7 @@ strong { font-weight: 600; }
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--verde-bosque-mid);
-  background: rgba(45,74,34,.1);
+  background: rgba(28,62,122,.1);
   padding: 0.28rem 0.8rem;
   border-radius: var(--r-pill);
 }
@@ -1280,10 +1317,10 @@ strong { font-weight: 600; }
 }
 
 /* Gradientes de fallback (si no carga la imagen) */
-.video-thumb--1 { background: linear-gradient(135deg, #2D4A22 0%, #7A4A35 100%); }
-.video-thumb--2 { background: linear-gradient(175deg, #4A2C1E 0%, #2D4A22 80%, #4E7B3D 100%); }
-.video-thumb--3 { background: linear-gradient(135deg, #5C3A28 0%, #3D6230 100%); }
-.video-thumb--4 { background: linear-gradient(135deg, #3D2818 0%, #4E7B3D 100%); }
+.video-thumb--1 { background: linear-gradient(135deg, #1C3E7A 0%, #7A4A35 100%); }
+.video-thumb--2 { background: linear-gradient(175deg, #2C3E6A 0%, #1C3E7A 80%, #3A74C8 100%); }
+.video-thumb--3 { background: linear-gradient(135deg, #5C3A28 0%, #2A5CA8 100%); }
+.video-thumb--4 { background: linear-gradient(135deg, #0E1F40 0%, #3A74C8 100%); }
 
 .play-icon {
   color: rgba(242,234,211,.55);
@@ -1654,7 +1691,7 @@ strong { font-weight: 600; }
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(10, 20, 8, 0.82);
+  background: rgba(5, 12, 30, 0.85);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   display: flex;
