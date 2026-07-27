@@ -546,10 +546,10 @@ strong { font-weight: 600; }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(15, 28, 10, 0.92) 0%,
-    rgba(15, 28, 10, 0.62) 45%,
-    rgba(15, 28, 10, 0.28) 75%,
-    rgba(15, 28, 10, 0.18) 100%
+    rgba(10, 20, 7, 0.97) 0%,
+    rgba(10, 20, 7, 0.88) 35%,
+    rgba(10, 20, 7, 0.72) 60%,
+    rgba(10, 20, 7, 0.58) 100%
   );
 }
 
@@ -582,6 +582,7 @@ strong { font-weight: 600; }
   font-weight: 900;
   max-width: 660px;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.4);
 }
 
 .hero-titulo em {
@@ -590,11 +591,12 @@ strong { font-weight: 600; }
 }
 
 .hero-subtitulo {
-  color: rgba(242,234,211,.72);
+  color: rgba(242,234,211,.82);
   font-size: 1rem;
   max-width: 520px;
   margin-bottom: 2rem;
   line-height: 1.65;
+  text-shadow: 0 1px 6px rgba(0,0,0,.5);
 }
 
 .hero-acciones {
