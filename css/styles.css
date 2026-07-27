@@ -469,16 +469,22 @@ strong { font-weight: 600; }
 
   .main-nav {
     position: fixed;
-    inset: 0;
-    top: 70px;
+    /* Cubre todo el viewport desde arriba para evitar clipping en iOS */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--verde-bosque);
-    padding: var(--sp-md);
+    /* Padding top para dejar espacio al header */
+    padding: 80px var(--sp-md) var(--sp-md);
     gap: var(--sp-sm);
     transform: translateX(100%);
     transition: transform var(--t-elastico);
     overflow-y: auto;
+    /* Evitar que el nav quede debajo de otros elementos */
+    z-index: 99;
   }
 
   .main-nav.abierto {
@@ -791,8 +797,11 @@ strong { font-weight: 600; }
   }
 
   .edu-foto {
-    clip-path: polygon(0 0, 100% 0, 100% 91%, 91% 100%, 0 100%);
-    aspect-ratio: 4/3;
+    /* En mobile: ratio portrait para mostrar la foto completa sin cortar */
+    aspect-ratio: 3/4;
+    object-position: center top;
+    /* Clip-path suavizado para que no corte contenido importante */
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
   }
 
   .edu-badge {
