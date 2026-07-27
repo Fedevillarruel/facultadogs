@@ -442,6 +442,10 @@ strong { font-weight: 600; }
   cursor: pointer;
   padding: 0.5rem;
   border-radius: var(--r-sm);
+  /* Necesario para que el botón quede SOBRE el nav overlay (z-index: 99)
+     dentro del stacking context del header */
+  position: relative;
+  z-index: 200;
 }
 
 .nav-toggle span {
