@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =============================================
+       SEO: Meta tags con foco en búsquedas locales
+       Barrio Caballito / Parque Chacabuco / CABA
+       ============================================= -->
+  <title>Facultadogs | Adiestramiento Canino CABA · Eduardo</title>
+  <meta name="description" content="Centro de adiestramiento canino, corrección de conductas y guardería en Viel 400, CABA. Especialistas en miedo, ansiedad y agresividad canina. 4.9★ en Google · 111 opiniones verificadas.">
+  <meta name="keywords" content="adiestramiento canino CABA, adiestramiento perros Caballito, guardería canina Buenos Aires, corrección de conductas caninas, educación canina Parque Chacabuco, adiestramiento perros Viel, comportamiento canino CABA, BARF perros Buenos Aires">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Facultadogs | Adiestramiento Canino en CABA">
+  <meta property="og:description" content="Adiestramiento, corrección de conductas y guardería en Viel 400, CABA. 4.9★ · 111 reseñas verificadas en Google.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Canonical URL — actualizar con el dominio real -->
+  <link rel="canonical" href="https://facultadogs.com.ar/">
+
+  <!-- Google Fonts: Playfair Display (serif de autoridad) + Source Sans 3 (sans humanista) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org: Datos estructurados para SEO local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Facultadogs",
+    "description": "Centro de adiestramiento canino, corrección de conductas y guardería",
+    "url": "https://facultadogs.com.ar",
+    "telephone": "+541173689372",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viel 400",
+      "addressLocality": "Ciudad Autónoma de Buenos Aires",
+      "postalCode": "C1424",
+      "addressRegion": "CABA",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.6276,
+      "longitude": -58.4429
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "111",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$",
+    "hasMap": "https://maps.google.com/?q=Viel+400+Buenos+Aires+Argentina"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ================================================
+       POPUP DE DEMO — Se muestra al cargar la página
+       ================================================ -->
+  <div class="demo-overlay" id="demo-overlay" role="dialog" aria-modal="true" aria-labelledby="demo-titulo">
+    <div class="demo-card">
+      <div class="demo-badge-top">DEMO</div>
+      <div class="demo-logo-wrap">
+        <a href="https://fedini.app/" target="_blank" rel="noopener noreferrer" aria-label="Fedini — ir al sitio">
+          <span class="demo-by">desarrollado por</span>
+          <span class="demo-marca">fedini<span class="demo-punto">.</span></span>
+        </a>
+      </div>
+      <h2 id="demo-titulo" class="demo-titulo">Este sitio es un prototipo funcional</h2>
+      <p class="demo-texto">
+        Todo lo que ves — fotos, videos, textos, paleta de colores, tipografía, secciones y estructura —
+        es <strong>100% personalizable</strong>.
+      </p>
+      <p class="demo-texto">
+        Las imágenes y videos son material de trabajo real de Facultadogs utilizado
+        únicamente con fines demostrativos para mostrar cómo quedaría el sitio terminado.
+        En la versión final se usan los archivos que el cliente elija.
+      </p>
+      <div class="demo-acciones">
+        <button class="btn-demo-cerrar" id="demo-cerrar" aria-label="Cerrar este aviso y ver el demo">
+          Ver el demo
+        </button>
+        <a href="https://fedini.app/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
+          Conocer Fedini →
+        </a>
+      </div>
+      <p class="demo-footer-txt">
+        ¿Querés un sitio así para tu negocio?
+        <a href="https://fedini.app/" target="_blank" rel="noopener noreferrer">fedini.app</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Saltar al contenido principal (accesibilidad por teclado) -->
+  <a href="#inicio" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ================================================
+       HEADER — Fijo, se oscurece al hacer scroll
+       ================================================ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Facultadogs — Ir al inicio">
+        <span class="logo-nombre">Facultadogs</span>
+        <span class="logo-sub">Centro Canino · CABA</span>
+      </a>
+
+      <!-- Botón hamburguesa (visible solo en mobile) -->
+      <button
+        class="nav-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul role="list">
+          <li><a href="#sobre-eduardo">Eduardo</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#casos">Casos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a
+          href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20los%20servicios%20de%20Facultadogs"
+          class="btn btn-cta-nav"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Consultar por WhatsApp">
+          Consultá ahora
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ================================================
+         HERO — Video de fondo + headline de impacto
+         VIDEO: reemplazar assets/video/hero.mp4 con
+         un clip real de entrenamiento (15–30 segundos,
+         optimizado para web, sin audio necesario).
+         POSTER: assets/img/hero-poster.jpg — frame fijo
+         del video para carga inicial en mobile.
+         ================================================ -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Media de fondo: video con poster fallback -->
+      <div class="hero-bg" aria-hidden="true">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster="assets/img/hero-poster.jpg"
+          aria-hidden="true">
+          <!-- Reemplazar con video real de entrenamiento (MP4 web-optimizado) -->
+          <source data-src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Contenido superpuesto al video -->
+      <div class="hero-content">
+        <div class="hero-texto">
+          <p class="hero-eyebrow">Adiestramiento · Conducta · Guardería · Viel 400, CABA</p>
+          <h1 id="hero-heading" class="hero-titulo">
+            El miedo, la ansiedad,<br>
+            la agresividad<br>
+            <em>no son rasgos de carácter.</em><br>
+            Son conductas.<br>
+            Y se trabajan.
+          </h1>
+          <p class="hero-subtitulo">
+            En Facultadogs trabajamos con tu perro desde la raíz del comportamiento,
+            no desde el síntoma. Resultados reales, documentados, con seguimiento personalizado.
+          </p>
+          <div class="hero-acciones">
+            <a
+              href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20los%20servicios%20de%20Facultadogs"
+              class="btn btn-primario"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Escribir a Eduardo por WhatsApp">
+              Hablá con Eduardo
+            </a>
+            <a href="#servicios" class="btn btn-fantasma">Ver servicios</a>
+          </div>
+        </div>
+
+        <!-- Badge de valoración Google -->
+        <div
+          class="hero-badge"
+          aria-label="Calificación: 4.9 sobre 5, 111 opiniones verificadas en Google">
+          <div class="badge-estrellas" aria-hidden="true">★★★★★</div>
+          <div class="badge-puntaje">4.9</div>
+          <div class="badge-detalle">111 opiniones<br>en Google</div>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <a href="#sobre-eduardo" class="scroll-down" aria-label="Desplazarse hacia abajo">
+        <span class="scroll-linea" aria-hidden="true"></span>
+        <span class="visually-hidden">Seguir leyendo</span>
+      </a>
+    </section>
+
+    <!-- ================================================
+         SOBRE EDUARDO
+         ================================================ -->
+    <section id="sobre-eduardo" class="seccion-eduardo" aria-labelledby="edu-titulo">
+      <div class="container">
+        <div class="edu-layout">
+
+          <!-- Columna izquierda: foto con corte orgánico -->
+          <div class="edu-foto-col">
+            <figure class="edu-figura">
+              <img
+                src="assets/img/eduardo.jpg"
+                alt="Eduardo, entrenador canino de Facultadogs, sentado con un cachorro después de una sesión de trabajo"
+                class="edu-foto"
+                loading="lazy"
+                width="540"
+                height="680">
+              <div class="edu-badge" aria-hidden="true">
+                <span class="edu-badge-num">+10</span>
+                <span class="edu-badge-txt">años de<br>experiencia</span>
+              </div>
+            </figure>
+          </div>
+
+          <!-- Columna derecha: texto -->
+          <div class="edu-texto-col">
+            <div class="reveal">
+              <span class="eyebrow">Sobre Eduardo</span>
+              <h2 id="edu-titulo">
+                No entrenamos perros.<br>
+                Entendemos por qué<br>
+                hacen lo que hacen.
+              </h2>
+              <p>
+                Eduardo construyó Facultadogs desde una convicción simple: un perro que muerde, que ladra
+                sin parar, que no puede quedarse solo — no es un perro "difícil". Es un perro que todavía
+                no encontró la guía correcta.
+              </p>
+              <p>
+                Su método combina lectura del lenguaje corporal, trabajo de impulsos y consistencia diaria.
+                Sin gritos, sin choques, sin métodos basados en el miedo. La relación entre el perro
+                y su tutor es el centro de todo.
+              </p>
+              <p>
+                Responde personalmente cada consulta. Cada familia multiespecie que llega a Facultadogs
+                recibe un plan construido para <em>ese</em> perro, no un curso genérico que aplica para todos.
+              </p>
+              <a href="#contacto" class="btn btn-contorno">Agenda una consulta inicial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SERVICIOS — Grid 2×2, estética de publicación
+         ================================================ -->
+    <section id="servicios" class="seccion-servicios" aria-labelledby="serv-titulo">
+      <div class="container">
+        <header class="seccion-header reveal">
+          <span class="eyebrow">Lo que hacemos</span>
+          <h2 id="serv-titulo">Servicios</h2>
+          <p class="seccion-intro">
+            Cada servicio está pensado para un momento distinto de la relación entre vos y tu perro.
+          </p>
+        </header>
+
+        <div class="servicios-grid">
+
+          <!-- 01 Adiestramiento -->
+          <article class="servicio reveal" aria-labelledby="s1-h">
+            <div class="serv-num" aria-hidden="true">01</div>
+            <div class="serv-contenido">
+              <h3 id="s1-h">Adiestramiento y Educación Canina</h3>
+              <p>
+                Desde las bases — nombre, llamada, sit, down — hasta trabajo en libertad
+                y comandos complejos. Para cachorros y adultos. El objetivo no es el truco:
+                es la comunicación entre vos y tu perro.
+              </p>
+              <ul class="serv-lista" aria-label="Este servicio incluye">
+                <li>Cachorros desde los 3 meses</li>
+                <li>Perros adultos de todas las razas</li>
+                <li>Sesiones individuales y grupales</li>
+                <li>Herramientas de refuerzo positivo</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 02 Corrección de Conductas -->
+          <article class="servicio servicio--oscuro reveal" aria-labelledby="s2-h">
+            <div class="serv-num" aria-hidden="true">02</div>
+            <div class="serv-contenido">
+              <h3 id="s2-h">Corrección de Conductas</h3>
+              <p>
+                Miedo, ansiedad por separación, reactividad, agresividad territorial.
+                Estas situaciones tienen origen y tienen solución. Trabajamos el comportamiento
+                desde la causa, no desde el síntoma visible.
+              </p>
+              <ul class="serv-lista" aria-label="Conductas que trabajamos">
+                <li>Miedo y fobias (personas, ruidos, estímulos)</li>
+                <li>Ansiedad por separación</li>
+                <li>Agresividad — todas las formas</li>
+                <li>Reactividad con personas y otros perros</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 03 Guardería -->
+          <article class="servicio reveal" aria-labelledby="s3-h">
+            <div class="serv-num" aria-hidden="true">03</div>
+            <div class="serv-contenido">
+              <h3 id="s3-h">Guardería Canina</h3>
+              <p>
+                Tu perro no está guardado. Está en actividad, con compañía y estructura.
+                Cada día recibís un reporte con fotos y video de cómo estuvo,
+                qué hizo y cómo interactuó con el grupo.
+              </p>
+              <ul class="serv-lista" aria-label="Detalles del servicio">
+                <li>Reporte diario con fotos y video</li>
+                <li>Grupos pequeños y supervisados</li>
+                <li>Actividad física y estimulación mental</li>
+                <li>Integración gradual al grupo</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 04 Asesoría de Alimentación -->
+          <article class="servicio servicio--acento reveal" aria-labelledby="s4-h">
+            <div class="serv-num" aria-hidden="true">04</div>
+            <div class="serv-contenido">
+              <h3 id="s4-h">Asesoría de Alimentación</h3>
+              <p>
+                Dieta BARF, huesos crudos y alimentación naturista para perros.
+                Si estás considerando el cambio o ya lo hiciste y tenés dudas,
+                Eduardo te guía con criterio y sin dogmatismos.
+              </p>
+              <ul class="serv-lista" aria-label="Incluye">
+                <li>Planes BARF personalizados por tamaño y condición</li>
+                <li>Transición desde alimento procesado</li>
+                <li>Proporciones, suplementos y fuentes</li>
+                <li>Seguimiento durante el proceso</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="servicios-cta reveal">
+          <a
+            href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20un%20servicio%20de%20Facultadogs"
+            class="btn btn-primario btn-grande"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Consultar sobre un servicio por WhatsApp">
+            Consultar por el servicio que necesitás
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CASOS DE ÉXITO — Antes / Después
+         Nombres ficticios representativos, sin inventar
+         citas textuales de clientes reales
+         ================================================ -->
+    <section id="casos" class="seccion-casos" aria-labelledby="casos-titulo">
+      <div class="container">
+        <header class="seccion-header reveal">
+          <span class="eyebrow">Resultados reales</span>
+          <h2 id="casos-titulo">Casos de éxito</h2>
+          <p class="seccion-intro">
+            Muchos tutores llegan a Facultadogs después de haber intentado otras cosas sin resultado.
+            Lo que sigue son algunos de los procesos que Eduardo acompañó de principio a fin.
+          </p>
+        </header>
+
+        <div class="casos-lista">
+
+          <!-- Caso 1 -->
+          <article class="caso reveal" aria-labelledby="c1-nombre">
+            <div class="caso-fotos">
+              <figure class="caso-foto caso-foto--antes">
+                <img
+                  src="assets/img/caso-golden-antes.jpg"
+                  alt="Perro durante una sesión de adiestramiento en Facultadogs, trabajando obediencia en plataforma"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta" aria-hidden="true">Proceso</figcaption>
+              </figure>
+              <figure class="caso-foto caso-foto--despues">
+                <img
+                  src="assets/img/caso-border-despues.jpg"
+                  alt="Border Collie trabajando con Eduardo en el parque, subiendo rampa de agility con confianza"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta caso-etiqueta--ok" aria-hidden="true">Resultado</figcaption>
+              </figure>
+            </div>
+            <div class="caso-info">
+              <h3 id="c1-nombre">Luna · Border Collie · 3 años</h3>
+              <p class="caso-conducta">Reactividad con otros perros</p>
+              <p>
+                Llegó sin poder cruzar la puerta con otro perro en la cuadra. La reactividad era inmediata
+                y con una intensidad que agotaba a su tutora. Después del proceso de desensibilización
+                y trabajo de impulsos, hoy camina en libertad en el parque sin incidentes.
+              </p>
+              <span class="caso-tiempo">Proceso: 3 meses</span>
+            </div>
+          </article>
+
+          <!-- Caso 2 -->
+          <article class="caso caso--invertido reveal" aria-labelledby="c2-nombre">
+            <div class="caso-fotos">
+              <figure class="caso-foto caso-foto--antes">
+                <img
+                  src="assets/img/caso-rottweiler-despues.jpg"
+                  alt="Eduardo trabajando con un perro pequeño en el interior, sesión de adiestramiento en casa del cliente"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta" aria-hidden="true">1ra sesión</figcaption>
+              </figure>
+              <figure class="caso-foto caso-foto--despues">
+                <img
+                  src="assets/img/caso-golden-despues.jpg"
+                  alt="Eduardo en el parque trabajando obediencia con tres perros de forma simultánea, todos en posición"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta caso-etiqueta--ok" aria-hidden="true">Resultado</figcaption>
+              </figure>
+            </div>
+            <div class="caso-info">
+              <h3 id="c2-nombre">Milo · Rottweiler · 2 años</h3>
+              <p class="caso-conducta">Agresividad hacia personas desconocidas</p>
+              <p>
+                Conducta agresiva severa con visitas y extraños. El miedo al error era constante
+                para su familia. El trabajo incluyó gestión del entorno, exposición gradual y
+                establecimiento de rutinas claras. Hoy recibe visitas en casa sin incidentes.
+              </p>
+              <span class="caso-tiempo">Proceso: 4 meses</span>
+            </div>
+          </article>
+
+          <!-- Caso 3 -->
+          <article class="caso reveal" aria-labelledby="c3-nombre">
+            <div class="caso-fotos">
+              <figure class="caso-foto caso-foto--antes">
+                <img
+                  src="assets/img/caso-golden-antes.jpg"
+                  alt="Perro en sesión de trabajo de confianza en plataforma, fase inicial del proceso"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta" aria-hidden="true">1ra semana</figcaption>
+              </figure>
+              <figure class="caso-foto caso-foto--despues">
+                <img
+                  src="assets/img/caso-border-despues.jpg"
+                  alt="Eduardo entrenando con un perro en el parque, trabajo de agility con confianza total"
+                  loading="lazy"
+                  width="380"
+                  height="500">
+                <figcaption class="caso-etiqueta caso-etiqueta--ok" aria-hidden="true">Mes 2</figcaption>
+              </figure>
+            </div>
+            <div class="caso-info">
+              <h3 id="c3-nombre">Simba · Golden Retriever · 5 años</h3>
+              <p class="caso-conducta">Ansiedad por separación</p>
+              <p>
+                Ladraba horas enteras, destruía el departamento y los vecinos ya estaban al límite.
+                La ansiedad no se "corrige" con castigo: se trabaja de forma sistemática y con paciencia.
+                Hoy Simba puede estar solo hasta 6 horas sin crisis.
+              </p>
+              <span class="caso-tiempo">Proceso: 2 meses y medio</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         TESTIMONIOS — Puntuación real 4.9★, 111 reseñas
+         Frases parafraseadas del sentimiento general,
+         sin inventar citas textuales de clientes específicos
+         ================================================ -->
+    <section id="testimonios" class="seccion-testimonios" aria-labelledby="test-titulo">
+      <div class="container">
+
+        <div class="test-layout reveal">
+          <!-- Puntuación grande a la izquierda -->
+          <div
+            class="test-rating"
+            aria-label="Calificación promedio: 4.9 sobre 5, basada en 111 opiniones de Google">
+            <div class="test-estrellas" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <div class="test-puntaje">
+              <span class="test-numero" data-target="4.9">4.9</span>
+              <span class="test-sobre">/5</span>
+            </div>
+            <p class="test-origen">111 opiniones en Google Maps</p>
+          </div>
+
+          <!-- Texto a la derecha -->
+          <div class="test-texto">
+            <span class="eyebrow">Testimonios</span>
+            <h2 id="test-titulo">
+              Lo que dicen quienes<br>
+              ya pasaron por acá
+            </h2>
+          </div>
+        </div>
+
+        <div class="test-grilla">
+          <blockquote class="testimonio reveal">
+            <p>
+              Lo que más sorprende a quienes pasan por Facultadogs es la claridad con la que Eduardo
+              explica qué está pasando y por qué. No te deja con más dudas de las que llegaste.
+            </p>
+            <footer><cite>Sentimiento general de las reseñas</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonio reveal">
+            <p>
+              Muchos tutores destacan que no hay soluciones genéricas: Eduardo observa, escucha y
+              diseña el abordaje para ese perro en particular. La diferencia se nota desde la primera sesión.
+            </p>
+            <footer><cite>Basado en reseñas verificadas de Google</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonio reveal">
+            <p>
+              Los que optaron por la guardería hablan especialmente del reporte diario:
+              saber cómo estuvo el perro, qué hizo y con quién interactuó cambia
+              completamente la experiencia de dejarlo al cuidado de otros.
+            </p>
+            <footer><cite>Reseñas de familias con servicio de guardería</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="test-cta reveal">
+          <a
+            href="https://www.google.com/search?q=Facultadogs+CABA+Viel+400"
+            class="btn btn-contorno-claro"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver todas las opiniones de Facultadogs en Google">
+            Ver todas las opiniones en Google
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         GALERÍA DE VIDEO — Placeholders para contenido real
+         Reemplazar con embeds de Instagram Reels/TikTok
+         o videos subidos directamente al servidor
+         ================================================ -->
+    <section id="galeria" class="seccion-galeria" aria-labelledby="gal-titulo">
+      <div class="container">
+        <header class="seccion-header reveal">
+          <span class="eyebrow">En acción</span>
+          <h2 id="gal-titulo">Así trabajamos. En video.</h2>
+          <p class="seccion-intro">
+            Mirá el proceso real: ejercicios, sesiones de corrección y momentos del día a día en la guardería.
+          </p>
+        </header>
+
+        <div class="video-grilla">
+          <!-- Video 1: ancho — ocupa 2 columnas -->
+          <div
+            class="video-item video-item--ancho reveal"
+            role="region"
+            aria-label="Video: Eduardo entrenando tres perros simultáneamente en el parque">
+            <div class="video-thumb" data-video="assets/video/video-1.mp4">
+              <img src="assets/img/video-thumb-1.jpg" alt="Eduardo en el parque de noche trabajando comandos con tres perros" class="video-poster" loading="lazy">
+              <span class="play-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+              <p class="video-desc">Comandos simultáneos · Nucita, Kira y más</p>
+            </div>
+          </div>
+
+          <!-- Video 2: alto — ocupa 2 filas (estilo Reel vertical) -->
+          <div
+            class="video-item video-item--alto reveal"
+            role="region"
+            aria-label="Video: trabajo de agility y obediencia con Border Collie">
+            <div class="video-thumb" data-video="assets/video/video-2.mp4">
+              <img src="assets/img/video-thumb-2.jpg" alt="Eduardo guiando un Border Collie en rampa de agility en el parque" class="video-poster" loading="lazy">
+              <span class="play-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+              <p class="video-desc">Agility y confianza · trabajo real</p>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div
+            class="video-item reveal"
+            role="region"
+            aria-label="Video: Eduardo entrenando Dachshund en interior">
+            <div class="video-thumb" data-video="assets/video/video-3.mp4">
+              <img src="assets/img/video-thumb-3.jpg" alt="Eduardo en sesión de adiestramiento con Dachshund en el espacio de Facultadogs" class="video-poster" loading="lazy">
+              <span class="play-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+              <p class="video-desc">Sesión individual · adiestramiento en espacio</p>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div
+            class="video-item reveal"
+            role="region"
+            aria-label="Video: perros interactuando en la guardería">
+            <div class="video-thumb" data-video="assets/video/video-4.mp4">
+              <img src="assets/img/video-thumb-4.jpg" alt="Dos perros interactuando de forma tranquila en el espacio de guardería de Facultadogs" class="video-poster" loading="lazy">
+              <span class="play-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+              <p class="video-desc">Guardería · convivencia supervisada</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-ig reveal">
+          <p>Seguí el trabajo diario en Instagram</p>
+          <a
+            href="https://instagram.com/facultadogs"
+            class="btn btn-contorno"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver el perfil de Facultadogs en Instagram">
+            @facultadogs
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CONTACTO — Dirección, WhatsApp, mapa, horarios
+         ================================================ -->
+    <section id="contacto" class="seccion-contacto" aria-labelledby="cont-titulo">
+      <div class="container">
+        <header class="seccion-header reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 id="cont-titulo">El primer paso<br>es una consulta</h2>
+          <p class="seccion-intro">
+            Eduardo responde personalmente. No hay formularios ni call centers:
+            escribís y te contesta alguien que sabe de qué está hablando.
+          </p>
+        </header>
+
+        <div class="contacto-grilla">
+          <!-- Datos de contacto -->
+          <div class="contacto-datos reveal">
+
+            <div class="dato">
+              <div class="dato-icono" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <address>
+                  <p>Viel 400, C1424</p>
+                  <p>Ciudad Autónoma de Buenos Aires</p>
+                </address>
+                <p class="dato-hint">Barrio de Caballito / Parque Chacabuco</p>
+              </div>
+            </div>
+
+            <div class="dato">
+              <div class="dato-icono" aria-hidden="true">
+                <!-- Ícono WhatsApp inline SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>
+                  <a
+                    href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20los%20servicios%20de%20Facultadogs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir WhatsApp con Eduardo al número 011 7368-9372">
+                    011 7368-9372
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="dato">
+              <div class="dato-icono" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Horarios de atención</strong>
+                <p>Lunes a viernes: 8 a 20 hs</p>
+                <p>Sábados: 9 a 17 hs</p>
+                <p class="dato-hint">Las consultas por WhatsApp se responden dentro del día</p>
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20los%20servicios%20de%20Facultadogs"
+              class="btn btn-whatsapp btn-grande"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Iniciar conversación de WhatsApp con Eduardo de Facultadogs">
+              Escribir a Eduardo por WhatsApp
+            </a>
+          </div>
+
+          <!-- Mapa embebido -->
+          <div class="contacto-mapa reveal">
+            <!--
+              RECOMENDADO: Ir a Google Maps → buscar "Viel 400 CABA" → Compartir →
+              "Incorporar un mapa" → reemplazar el src a continuación con el código oficial.
+              Esto mejora la precisión del pin.
+            -->
+            <iframe
+              src="https://maps.google.com/maps?q=Viel+400+Buenos+Aires+Argentina&z=16&output=embed"
+              title="Ubicación de Facultadogs — Viel 400, CABA"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              aria-label="Mapa de Google Maps mostrando la ubicación de Facultadogs en Viel 400, Buenos Aires">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grilla">
+
+        <div class="footer-marca">
+          <span class="footer-logo">Facultadogs</span>
+          <p>Adiestramiento canino con criterio.<br>Viel 400, CABA.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <a href="#sobre-eduardo">Eduardo</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#casos">Casos de éxito</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="footer-extra">
+          <a
+            href="https://instagram.com/facultadogs"
+            class="footer-ig"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Seguir a Facultadogs en Instagram">
+            Instagram · @facultadogs
+          </a>
+          <div
+            class="footer-lgbtq"
+            aria-label="Facultadogs es un espacio inclusivo y amigable con la comunidad LGBTQ+">
+            <span aria-hidden="true">🏳️‍🌈</span>
+            <span>Espacio LGBTQ+ friendly</span>
+          </div>
+          <div
+            class="footer-rating"
+            aria-label="Calificación: 4.9 sobre 5 en Google, 111 opiniones">
+            <span class="footer-estrella" aria-hidden="true">★</span>
+            4.9 · 111 opiniones en Google
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 Facultadogs · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================
+       BOTÓN FLOTANTE WHATSAPP — Siempre visible
+       ================================================ -->
+  <a
+    href="https://wa.me/541173689372?text=Hola%20Eduardo%2C%20quiero%20consultar%20por%20los%20servicios%20de%20Facultadogs"
+    class="fab-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a Facultadogs por WhatsApp"
+    title="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true" focusable="false">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="fab-label">¿Hablamos?</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
