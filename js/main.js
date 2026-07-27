@@ -121,24 +121,14 @@ function initMobileNav() {
     nav.classList.add('abierto');
     toggle.setAttribute('aria-expanded', 'true');
     toggle.setAttribute('aria-label', 'Cerrar menú de navegación');
-    // Fix iOS Safari: position:fixed en lugar de overflow:hidden,
-    // que clipea elementos fixed en Safari móvil
-    const scrollY = window.scrollY;
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.width = '100%';
+    // No manipulamos body — el nav fixed a pantalla completa ya
+    // bloquea la interacción con el contenido de fondo en mobile
   }
 
   function cerrar() {
     nav.classList.remove('abierto');
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Abrir menú de navegación');
-    // Restaurar scroll position al cerrar
-    const scrollY = Math.abs(parseInt(document.body.style.top || '0'));
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.width = '';
-    window.scrollTo(0, scrollY);
   }
 
   toggle.addEventListener('click', () => {
